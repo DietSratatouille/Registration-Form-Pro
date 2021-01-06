@@ -9,8 +9,8 @@ class FormConfiguration {
 
     @Bean
     fun dbInitializer(repository: Repository) = ApplicationRunner {
-        val test = repository.save(User(
-            id = 1,
+        val tmpUser = repository.save(User(
+            //id = 1,
             firstName = "Test",
             lastName = "Testmore",
             phoneNumber = "111-111-1111",
